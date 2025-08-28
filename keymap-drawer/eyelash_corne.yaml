@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  QWERTY:
+  HAIL:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -44,12 +44,12 @@ layers:
   - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - LGUI
-  - SYMBOL
+  - WORSHIP
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-control$$
-  - NUMBER
+  - SATAN
   - $$mdi:apple-keyboard-option$$
-  NUMBER:
+  SATAN:
   - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -98,7 +98,7 @@ layers:
   - INS
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  SYMBOL:
+  WORSHIP:
   - '~'
   - '!'
   - '@'
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  Fn:
+  DOOM:
   - '&studio_unlock'
   - F1
   - F2
@@ -200,4 +200,4 @@ combos:
 - p: [1, 15, 29]
   k: '&soft_off'
 - p: [43, 46]
-  k: Fn
+  k: DOOM
