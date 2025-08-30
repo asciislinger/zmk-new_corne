@@ -73,11 +73,11 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - F6
-  - _
+  - {t: '-', s: _}
   - +
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - '|'
+  - \
   - {t: '$$mdi:transfer$$', type: trans}
   - F7
   - F8
@@ -122,8 +122,8 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '=', s: +}
-  - {t: '-', s: _}
-  - {t: '=', s: +}
+  - _
+  - +
   - '{'
   - '}'
   - {t: \, s: '|'}
