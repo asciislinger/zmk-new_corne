@@ -85,7 +85,7 @@
             display-name = "SATAN";
             bindings = <
 &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5                                 &mmv MOVE_UP                     &kp N6   &kp N7           &kp N8           &kp N9            &kp N0    &kp BSPC
-&trans     &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F6   &kp UNDER        &kp PLUS         &kp LEFT_BRACKET  &kp RBKT  &kp PIPE
+&trans     &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F6   &kp MINUS        &kp PLUS         &kp LEFT_BRACKET  &kp RBKT  &kp NON_US_BACKSLASH
 &trans     &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp F12  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD   &kp END   &kp PG_DN
                            &trans  &trans   &trans                                                                  &kp INS  &trans           &trans
             >;
@@ -96,10 +96,10 @@
         raise_layer {
             display-name = "WORSHIP";
             bindings = <
-&kp TILDE  &kp EXCL        &kp AT        &kp HASH    &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR    &kp RPAR    &kp DEL
-&trans     &bt BT_CLR_ALL  &bt BT_PRV    &bt BT_NXT  &mkp LCLK  &mkp RCLK            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL  &kp MINUS  &kp EQUAL  &kp LBRC    &kp RBRC    &kp BACKSLASH
-&trans     &out OUT_USB    &out OUT_BLE  &none       &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS   &kp LBRC   &kp K_NEXT  &kp K_PREV  &kp K_PLAY_PAUSE
-                                         &trans      &trans     &kp SPACE                                                             &kp RET    &trans     &trans
+&kp TILDE  &kp EXCL        &kp AT        &kp HASH    &kp DLLR   &kp PRCNT                            &mmv MOVE_UP                     &kp CARET  &kp AMPS        &kp ASTRK  &kp LPAR    &kp RPAR    &kp DEL
+&trans     &bt BT_CLR_ALL  &bt BT_PRV    &bt BT_NXT  &mkp LCLK  &mkp RCLK            &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp EQUAL  &kp UNDERSCORE  &kp PLUS   &kp LBRC    &kp RBRC    &kp BACKSLASH
+&trans     &out OUT_USB    &out OUT_BLE  &none       &none      &mkp MB5   &trans                    &mmv MOVE_DOWN                   &kp UNDER  &kp PLUS        &kp LBRC   &kp K_NEXT  &kp K_PREV  &kp K_PLAY_PAUSE
+                                         &trans      &trans     &kp SPACE                                                             &kp RET    &trans          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
