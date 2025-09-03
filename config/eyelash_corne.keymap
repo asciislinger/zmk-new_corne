@@ -73,10 +73,10 @@
         default_layer {
             display-name = "HAIL";
             bindings = <
-&kp TAB             &kp Q  &kp W  &kp E     &kp R  &kp T                             &kp UP                &kp Y       &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&mt LEFT_SHIFT ESC  &kp A  &kp S  &kp D     &kp F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H       &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL           &kp Z  &kp X  &kp C     &kp V  &kp B      &kp SPACE              &kp DOWN              &kp N       &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RET
-                                  &kp LGUI  &mo 2  &kp SPACE                                               &kp RETURN  &mo 1  &kp RALT
+&kp TAB             &kp Q  &kp W  &kp E     &kp R  &kp T                             &kp UP                &kp Y  &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&mt LEFT_SHIFT ESC  &kp A  &kp S  &kp D     &kp F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL           &kp Z  &kp X  &kp C     &kp V  &kp B      &kp SPACE              &kp DOWN              &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RET
+                                  &kp LGUI  &mo 2  &kp SPACE                                               &mo 4  &mo 1  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>;
@@ -86,7 +86,7 @@
             display-name = "SATAN";
             bindings = <
 &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5                                 &mmv MOVE_UP                     &kp N6   &kp N7           &kp N8           &kp N9            &kp N0    &kp BSPC
-&trans     &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F6   &kp MINUS        &kp PLUS         &kp LEFT_BRACKET  &kp RBKT  &kp NON_US_BACKSLASH
+&trans     &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp F6   &kp MINUS        &kp KP_EQUAL     &kp LEFT_BRACKET  &kp RBKT  &kp NON_US_BACKSLASH
 &trans     &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp C_MUTE                    &mmv MOVE_DOWN                   &kp F12  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD   &kp END   &kp PG_DN
                            &trans  &trans   &trans                                                                  &kp INS  &trans           &trans
             >;
@@ -116,6 +116,15 @@
             >;
 
             sensor-bindings = <&scroll_encoder>;
+        };
+
+        Movement {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans    &kp UP_ARROW  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans    &trans        &trans     &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans    &trans
+            >;
         };
     };
 };
