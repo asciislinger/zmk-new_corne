@@ -47,10 +47,12 @@
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
-        bindings = <&msc MOVE_Y(10)>, <&msc MOVE_Y(-10)>;
-
+        // Positive = up, Negative = down. Try 60–120 to taste.
+        bindings = <&msc MOVE_Y(-80)>, <&msc MOVE_Y(80)>;
+    
         tap-ms = <100>;
     };
+
 
     combos {
         compatible = "zmk,combos";
@@ -78,7 +80,7 @@
                                   &kp LGUI  &mo 2  &kp SPACE                                               &mo 4  &mo 1  &kp RALT
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_DN PAGE_UP>;
+            sensor-bindings = <&scroll_encoder>;
         };
 
         lower_layer {
