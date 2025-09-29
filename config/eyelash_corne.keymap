@@ -47,12 +47,13 @@
     scroll_encoder: scroll_encoder {
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
+
         // Positive = up, Negative = down. Try 60–120 to taste.
+
         bindings = <&msc MOVE_Y(-80)>, <&msc MOVE_Y(80)>;
-    
+
         tap-ms = <100>;
     };
-
 
     combos {
         compatible = "zmk,combos";
@@ -74,10 +75,10 @@
         default_layer {
             display-name = "HAIL";
             bindings = <
-&lt 4 TAB           &kp Q  &kp W  &kp E     &kp R  &kp T                             &kp UP                &kp Y  &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&mt LEFT_SHIFT ESC  &kp A  &kp S  &kp D     &kp F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL           &kp Z  &kp X  &kp C     &kp V  &kp B      &kp SPACE              &kp DOWN              &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RET
-                                  &kp LGUI  &mo 2  &kp SPACE                                               &mo 4  &mo 1  &kp RALT
+&lt 4 TAB  &kp Q  &kp W  &kp E     &kp R             &kp T                             &kp UP                &kp Y  &kp U              &kp I      &kp O    &kp P     &kp BSPC
+&kp ESC    &kp A  &kp S  &kp D     &mt LEFT_SHIFT F  &kp G                   &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &mt RIGHT_SHIFT J  &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LCTRL  &kp Z  &kp X  &kp C     &kp V             &kp B      &kp SPACE              &kp DOWN              &kp N  &kp M              &kp COMMA  &kp DOT  &kp FSLH  &kp RET
+                         &kp LGUI  &mo 2             &kp SPACE                                               &mo 4  &mo 1              &kp RALT
             >;
 
             sensor-bindings = <&scroll_encoder>;
